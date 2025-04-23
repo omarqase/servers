@@ -169,6 +169,7 @@ app.post("/CheckifHaveAntiCheatOrNot", async (req, res) => {
     }
 })
 
+console.log(process.env.DISCORD_TOKEN)
 client.login(process.env.DISCORD_TOKEN)
 
 app.listen(4122, () => {
