@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const { Client, GatewayIntentBits, REST, Routes, SlashCommandBuilder, messageLink, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, WebhookClient } = require("discord.js");
 const storage = require("node-persist");
+require('dotenv').config();
 const app = express();
 app.use(express())
 app.use(express.json());
@@ -70,7 +71,7 @@ client.on("ready", () => {
          )
        )
     ]
-        const rest = new REST({ version: '10' }).setToken("MTM2MzkyMzExNjA5ODU4NDU3OA.GVFvXQ.99OwRgbcRs5AFq7vM_2FyLWcPFoF-6Rrw8Q24w");
+        const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
         (async () => {
           try {
             console.log("slash start")
@@ -168,7 +169,7 @@ app.post("/CheckifHaveAntiCheatOrNot", async (req, res) => {
     }
 })
 
-client.login("MTM2MzkyMzExNjA5ODU4NDU3OA.GVFvXQ.99OwRgbcRs5AFq7vM_2FyLWcPFoF-6Rrw8Q24w")
+client.login(process.env.DISCORD_TOKEN)
 
 app.listen(4122, () => {
     console.log("server run")
