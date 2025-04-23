@@ -70,7 +70,7 @@ client.on("ready", () => {
          )
        )
     ]
-        const rest = new REST({ version: '10' }).setToken("MTM2MzkyMzExNjA5ODU4NDU3OA.G4XdOl.3A6pAa-o5fpmAqL2TPFou4-3XYoJ3HN1aEU5wM");
+        const rest = new REST({ version: '10' }).setToken("MTM2MzkyMzExNjA5ODU4NDU3OA.GVFvXQ.99OwRgbcRs5AFq7vM_2FyLWcPFoF-6Rrw8Q24w");
         (async () => {
           try {
             console.log("slash start")
@@ -168,7 +168,7 @@ app.post("/CheckifHaveAntiCheatOrNot", async (req, res) => {
     }
 })
 
-client.login("MTM2MzkyMzExNjA5ODU4NDU3OA.G4XdOl.3A6pAa-o5fpmAqL2TPFou4-3XYoJ3HN1aEU5wM")
+client.login("MTM2MzkyMzExNjA5ODU4NDU3OA.GVFvXQ.99OwRgbcRs5AFq7vM_2FyLWcPFoF-6Rrw8Q24w")
 
 app.listen(4122, () => {
     console.log("server run")
