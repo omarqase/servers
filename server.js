@@ -70,7 +70,7 @@ client.on("ready", () => {
          )
        )
     ]
-        const rest = new REST({ version: '10' }).setToken("MTM2MzkyMzExNjA5ODU4NDU3OA.G_BZcB.sfrplovX7znRRY9-1CYZzAzLRvT0yFUwsZtaoI");
+        const rest = new REST({ version: '10' }).setToken("MTM2MzkyMzExNjA5ODU4NDU3OA.G4XdOl.3A6pAa-o5fpmAqL2TPFou4-3XYoJ3HN1aEU5wM");
         (async () => {
           try {
             console.log("slash start")
